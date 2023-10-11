@@ -3,8 +3,6 @@ from flask import Flask, render_template
 from blueprints.home import home_bp
 from blueprints.about import about_bp
 from blueprints.contact import contact_bp
-from blueprints.portfolio import portfolio_bp
-from blueprints.resume import resume_bp
 from blueprints.cms import cms_bp
 
 
@@ -15,8 +13,6 @@ def create_app():
     app.register_blueprint(home_bp)
     app.register_blueprint(about_bp)
     app.register_blueprint(contact_bp)
-    app.register_blueprint(portfolio_bp)
-    app.register_blueprint(resume_bp)
     app.register_blueprint(cms_bp)
 
     @app.route("/", methods=["GET"])

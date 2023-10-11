@@ -11,7 +11,8 @@
           {{ active_entry.title if active_entry else "About Me" }}
         </h2>
         <h3 class="section-subheading text-muted">
-          {{ active_entry.introText if active_entry else "A brief introduction about myself" }}
+          {{ active_entry.introText if active_entry else "A brief introduction
+          about myself" }}
         </h3>
       </div>
     </div>
@@ -21,7 +22,7 @@
       <div class="col-lg-4 text-center">
         <img
           src="{{ active_entry.imageUrl if active_entry else url_for('static', filename='img/profile-img.jpg') }}"
-          alt="Anderas"
+          alt="[Your Name]"
           class="img-fluid rounded-circle w-50"
         />
       </div>
